@@ -1,6 +1,6 @@
 # Pokemon-Card
 
-Agora chegando ao javascript, criamos um array para as cores correspondentes a cada tipo de pokemon. Em seguida, armazenamos o link pokeAPI em uma constante chamada URL. Também obtemos os elementos carde btne os atribuímos a variáveis.
+Chegando ao javascript, criamos um array para as cores correspondentes a cada tipo de pokemon. Em seguida, armazenamos o link pokeAPI em uma constante chamada URL. Também obtemos os elementos carde btne os atribuímos a variáveis.
 
 Na próxima etapa, criamos uma função chamada getPokeData. Dentro desta função, geramos um número aleatório entre 1 e 150. Este número será nosso id.
 
