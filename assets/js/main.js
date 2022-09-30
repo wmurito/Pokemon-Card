@@ -21,11 +21,11 @@ const typeColor = {
   const btn = document.getElementById("btn");
   
   let getPokeData = () => {
-    // Generate a random number between 1 and 150
+    // Gerando numero aleatorio entre 1 e 150
     let id = Math.floor(Math.random() * 150) + 1;
-    // Combine the pokeapi url with pokemon id
+    // Combinando a pokeapi url com o id
     const finalUrl = url + id;
-    // Fetch generated URL
+    // Usando fetch pra conectar com url
     fetch(finalUrl)
       .then((response) => response.json())
       .then((data) => {
@@ -33,10 +33,9 @@ const typeColor = {
       });
   };
   
-  //Generate Card
   
   let generateCard = (data) => {
-    // Get necessary data and assign it to variables
+    // Obtenha os dados e atribuindo as variaveis
     console.log(data);
     const hp = data.stats[0].base_stat;
     const imgSrc = data.sprites.other.dream_world.front_default;
@@ -45,7 +44,7 @@ const typeColor = {
     const statDefense = data.stats[2].base_stat;
     const statSpeed = data.stats[5].base_stat;
   
-    // Set themeColor based on pokemon type
+    // Mudando a cor do card de acordo com o a cor do pokemon
     const themeColor = typeColor[data.types[0].type.name];
     console.log(themeColor);
     card.innerHTML = `
